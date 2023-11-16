@@ -43,20 +43,20 @@ print("Your mission is to find the treasure.")
 
 # Write your code below this line 👇
 
-first_step = input("Left of right? ").lower()
+first_step = input("Left of right?\n").lower()
 if first_step != "left":
     print("Fall into a hole. Game Over.")
-
-step_two = input("Swim or wait").lower()
-if step_two != "wait":
-    print("Attacked by trout. Game Over.")
-
-step_three = input("Which door? (Red, Blue or Yellow)").lower()
-if step_three == "red":
-    print("Burned by fire. Game Over.")
-elif step_three == "blue":
-    print("Eaten by beasts. Game Over.")
-elif step_three == "yellow":
-    print("You Win!")
 else:
-    print("Game Over")
+    step_two = input("Swim or wait\n").lower()
+    if step_two != "wait":
+        print("Attacked by trout. Game Over.\n")
+    else:
+        step_three = input("Which door? (Red, Blue or Yellow)\n").lower()
+        if step_three == "red":
+            print("Burned by fire. Game Over.\n")
+        elif step_three == "blue":
+            print("Eaten by beasts. Game Over.\n")
+        elif step_three == "yellow":
+            print("You Win!\n")
+        else:
+            print("Game Over\n")
